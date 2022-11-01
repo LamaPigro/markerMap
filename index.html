@@ -13,9 +13,36 @@
     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
      crossorigin=""></script> 
+  
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+  
   </head>
   <body>
     <div id="app">
+
+      <div class="nukeBox">
+        <label class="label cursor-pointer">
+          <span class="label-text">Reattori nucleari</span> 
+          <input type="checkbox" class="checkbox" onclick="test()"/>
+        </label>
+      </div>
+
+      <div class="metBox">
+        <label class="label cursor-pointer">
+          <span class="label-text">Meteoriti</span> 
+          <input type="checkbox" class="checkbox"/>
+        </label>
+      </div>
+
+      <div class="eqBox">
+        <label class="label cursor-pointer">
+          <span class="label-text">Terremoti</span> 
+          <input type="checkbox" class="checkbox" />
+        </label>
+      </div>
+      
       <div id="map"></div>
     </div>  
     <script type="module" src="/main.js"></script>
