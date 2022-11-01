@@ -8,20 +8,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-/*L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
-
-var southWest = L.latLng(-89.98155760646617, -180),
-northEast = L.latLng(89.99346179538875, 180);
-var bounds = L.latLngBounds(southWest, northEast);
-
-map.setMaxBounds(bounds);
-map.on('drag', function() {
-    map.panInsideBounds(bounds, { animate: false });
-});*/
-
-//var marker = L.marker([59.206000, 18.082900]).addTo(map);
-//marker.bindPopup("<b>Ågesta</b><br>").openPopup();
-
 // ICON
 var nuclearIcon = L.icon({
     iconUrl: 'nuclearIcon.png',
